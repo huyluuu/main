@@ -12,14 +12,12 @@ Page:Toggle('Auto Haki',false,function(b) -- Toggle,Def,callback
 end)
 
 spawn(function()
-    while wait() do
     if haki then
         local args = {
             [1] = "Aura"
         }
         
         game:GetService("ReplicatedStorage"):WaitForChild("OtherEvent"):WaitForChild("MainEvents"):WaitForChild("Ability"):InvokeServer(unpack(args))
-    end
 end
     end)
 
@@ -28,7 +26,6 @@ Page:Toggle('Auto Ken',false,function(b) -- Toggle,Def,callback
     end)
     
     spawn(function()
-        while wait() do
         if ken then
             local args = {
                 [1] = "Instinct"
@@ -36,5 +33,4 @@ Page:Toggle('Auto Ken',false,function(b) -- Toggle,Def,callback
             
             game:GetService("ReplicatedStorage"):WaitForChild("OtherEvent"):WaitForChild("MainEvents"):WaitForChild("Ability"):InvokeServer(unpack(args))
         end
-    end
         end)
