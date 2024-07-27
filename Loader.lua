@@ -5,7 +5,7 @@ _G.Logo = 13990972098 -- ID Logo Your Hub
 
 local Win = library:Evil("Siling Hub","",_G.Logo )
 local Tab1 = Win:CraftTab('Farm/Quest') -- Name
-local Page = Tab1:CraftPage('Main',1) -- Name,1 or 2
+local Page = Tab1:CraftPage('',1) -- Name,1 or 2
 
 Page:Toggle('Auto Haki',true,function(b) -- Toggle,Def,callback
     haki = b
