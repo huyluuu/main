@@ -20,6 +20,7 @@ spawn(function()
         
         game:GetService("ReplicatedStorage"):WaitForChild("OtherEvent"):WaitForChild("MainEvents"):WaitForChild("Ability"):InvokeServer(unpack(args))
     end
+end
     end)
 
 Page:Toggle('Auto Ken',false,function(b) -- Toggle,Def,callback
@@ -35,4 +36,5 @@ Page:Toggle('Auto Ken',false,function(b) -- Toggle,Def,callback
             
             game:GetService("ReplicatedStorage"):WaitForChild("OtherEvent"):WaitForChild("MainEvents"):WaitForChild("Ability"):InvokeServer(unpack(args))
         end
+    end
         end)
