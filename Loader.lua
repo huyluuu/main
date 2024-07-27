@@ -9,10 +9,9 @@ local Page = Tab1:CraftPage('Main',1) -- Name,1 or 2
 
 Page:Toggle('Auto Haki',false,function(b) -- Toggle,Def,callback
     haki = b
+    local args = {
+        [1] = "Aura"
+    }
+            
+    game:GetService("ReplicatedStorage"):WaitForChild("OtherEvent"):WaitForChild("MainEvents"):WaitForChild("Ability"):InvokeServer(unpack(args))
 end)
-if haki then
-local args = {
-    [1] = "Aura"
-}
-        
-game:GetService("ReplicatedStorage"):WaitForChild("OtherEvent"):WaitForChild("MainEvents"):WaitForChild("Ability"):InvokeServer(unpack(args))
